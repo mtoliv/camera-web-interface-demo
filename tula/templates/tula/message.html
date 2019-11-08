@@ -1,0 +1,12 @@
+{% load static %}
+<link href='https://fonts.googleapis.com/css?family=Lexend Peta' rel='stylesheet'>
+<p style="text-align: center; font-family: 'Lexend Peta';font-size: 50px; color: #001a4d; margin-top: 150px;">Bem-Vindo à Tula Intelligent Interface</p>
+<p style="text-align: center; font-family: 'Lexend Peta';font-size: 50px; color: #001a4d; margin-top: 150px;">Demo</p>
+<form action="{% url 'tula:start_classifier'%}" method="post" target="_top" align="center">
+	{% csrf_token %}
+	<input type="submit" value="Inicilizar Classificador" />
+</form>
+<form action="{% url 'tula:start_demo'%}" method="post" target="_top" align="center">
+	{% csrf_token %}
+	<input type="submit" value="Iniciar Demo" />
+</form>

@@ -1,0 +1,38 @@
+{% load static %}
+<html>
+
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body> 
+
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col" style="text-align: center;">Imagem</th>
+      <th scope="col">Classificação</th>
+      <th scope="col">Câmara nº</th>
+    </tr>
+  </thead>
+  <tbody>
+                      <tr>
+                        <td>
+                        	<div>
+								<script type="text/javascript">
+									document.write('<p style="text-align:center;"><img src="/media/images/recent/{{file}}?'+Math.random()+' alt="Willmaster.com logo" border="0" height="500" width="667" class="rounded"></p>');
+								</script>
+							</div>
+                             </td>
+                             {%if file_status == "Rejected" %}
+								<td><p style="margin-top: 50%;"><font color="red">REJEITADA</font></p></td>
+							{%elif file_status == "Accepted" %}
+								<td><p style="margin-top: 50%;"><font color="green">ACEITE</font></p></td>
+							{% endif %}
+                               <td><p style="margin-top: 50%;">1</p></td>
+                         </tr>
+  </tbody>
+</table>
+</body>
+</html>

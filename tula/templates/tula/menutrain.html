@@ -1,0 +1,114 @@
+<html>
+<head>
+  <style type="text/css">
+  body {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    background:#354545;
+}
+.main_sidebar {
+    min-height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    width:350px;
+    transition: all 300ms cubic-bezier(0.65, 0.05, 0.36, 1);
+    will-change: left, width;
+    box-shadow: inset -1px 0 10px rgba(0, 0, 0, 0.4);
+    background: #293749;
+}
+.main_sidebar:after {
+    content: '';
+    background-color: #253238;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 58px;
+}
+.main_sidebar ul {
+    list-style:none;
+    padding-left:58px;
+}
+.main_sidebar ul li {
+    padding:10px;
+}
+.main_sidebar ul li a {
+    color:#fff;
+    display:block;
+}
+.main_sidebar ul li i {
+    float:left;
+    color:grey;
+    margin-left:-58px;
+    font-size:24px;
+    padding-left:7px;
+}
+.main_sidebar ul li:hover {
+    background:#167696;
+}
+.main_sidebar ul li a:hover {
+    color:#fff;
+    text-decoration:none;
+}
+.main_sidebar ul li:hover i {
+    color:#fff;
+}
+.main_sidebar ul li.active {
+    background:#0f4698;
+}
+.main_sidebar ul li.active i {
+    color:#fff;
+}
+.main_sidebar ul li.active:hover {
+    background:#167696;
+}
+.main_sidebar ul li.active:hover i {
+    color:#fff;
+}
+
+.main {
+    float:right;
+    color:#fff;
+    display:block;
+    width:100%;
+    background:red;
+    min-height:100vh;
+}
+ 
+  </style>
+  <title>{% block title %}Tim's Site{% endblock %}</title>
+</head>
+ 
+<body>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="wrapper">
+    <aside class="main_sidebar">
+        <ul>
+            <li><i class="fa fa-home"></i><a href="http://127.0.0.1:8000/tula/" target="_top">Início</a></li>
+            <li><i class="fa fa-video-camera"></i><a href="http://127.0.0.1:8000/tula/real_time_view/" target="_top">Ver Câmara</a></li>
+            <li class="active"><i class="fa fa-book"></i><a href="http://127.0.0.1:8000/tula/train/" target="_top">Treinar</a></li>
+            <li><i class="fa fa-phone"></i><a href="#">Contactos</a></li>
+            <li><i class="fa fa-bar-chart"></i><a href="#">Estatísticas</a></li>
+            <li><i class="fa fa-crosshairs"></i><a href="#">Menu1</a></li>
+            <li><i class="fa fa-deaf"></i><a href="#">Menu2</a></li>
+            <li><i class="fa fa-desktop"></i><a href="#">Menu3</a></li>
+            <li><i class="fa fa-dot-circle-o"></i><a href="#">Menu4</a></li>
+            <li><i class="fa fa-folder"></i><a href="#">Menu5</a></li>
+        </ul>
+    </aside>
+    <div class="mian">
+        <h1>Prakash </h1>
+    </div>
+</div>
+
+
+</body>
+</html>

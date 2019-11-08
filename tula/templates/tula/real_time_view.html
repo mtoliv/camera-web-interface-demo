@@ -1,0 +1,29 @@
+
+<html>
+  <head>
+   <script type="text/javascript">
+      window.onload = setupRefresh;
+ 
+      function setupRefresh() {
+          setInterval("refreshFrame();", 1500);
+      }
+      function refreshFrame() {
+         parent.right_frame.location.reload();
+      }
+  </script>
+  </head>
+
+    <frameset cols="13%,*" border=0>
+      <frame src="menurtv">
+    <frameset id="cntfrm" rows="20%,*" border=0>
+    <frame name="left_frame" src="topframe" scrolling="no" />
+    <frame  name="right_frame" scrolling="auto" src="recent" />
+    </frameset>
+     </frameset>
+  
+  
+
+
+
+</html>
+ 

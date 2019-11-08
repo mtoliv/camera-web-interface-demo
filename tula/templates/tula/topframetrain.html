@@ -1,0 +1,24 @@
+{% load static %}
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="{% static 'tula/style.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+	<title>TII</title>
+<nav class="navbar navbar-expand-sm navbar-light" style="background-color: #EFF8FB;">
+   <a class="navbar-brand" href="http://127.0.0.1:8000/tula/" target="_top">
+          <img src="{% static "tula/tula_header.png" %}" alt="" height="80" width="350">
+        </a>
+  <p style="font-family: 'Orbitron';font-size: 30px;margin-left: 35%;color:#001a4d;margin-top:1%;">Tula Intelligent Interface by Tula-Labs</p>
+</nav>
+	</head>
+<body>
+
+<form action="{% url 'tula:empty_images'%}" method="post" target="_top" align="center">
+	{% csrf_token %}
+	<input type="submit" value="Esvaziar Imagens" />
+</form>
+
+</body>
+</html>

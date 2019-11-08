@@ -1,0 +1,30 @@
+<!doctype html>
+{% load static %}
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="{% static 'tula/style.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+	<title>TII</title>
+
+	<!-- Grey with black text -->
+<nav class="navbar navbar-expand-sm navbar-light" style="background-color: #EFF8FB;">
+  <ul class="navbar-nav">
+   <a class="navbar-brand" href="#" style="margin-left:15%;margin-top:1%;">
+          <img src="{% static "tula/tula_header.png" %}" alt="" height="80" width="350">
+        </a>
+  </ul>
+  <p style="font-family: 'Orbitron';font-size: 30px;margin-left: 35%;color:#001a4d;margin-top:1%;">Tula Intelligent Interface by Tula-Labs</p>
+</nav>
+
+	</head>
+
+
+	<body>
+		<div>	
+			{% block content %}
+			{% endblock %}
+		</div>
+	</body>
+</html>
