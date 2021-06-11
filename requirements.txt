@@ -36,4 +36,4 @@ sqlparse==0.3.0
 virtualenv==16.7.2
 virtualenvwrapper-win==1.2.5
 websocket==0.2.1
-websockets==8.0.2
+websockets==9.1
