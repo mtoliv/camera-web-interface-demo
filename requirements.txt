@@ -2,7 +2,7 @@ attrs==19.1.0
 cffi==1.12.3
 cycler==0.10.0
 decorator==4.4.0
-Django==2.2
+Django==2.2.28
 func-timeout==4.3.5
 gevent==1.4.0
 greenlet==0.4.15
