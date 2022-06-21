@@ -13,7 +13,7 @@ kiwisolver==1.1.0
 matplotlib==3.1.1
 MinimalModbus==0.7
 networkx==2.3
-numpy==1.17.0
+numpy==1.22.0
 ocpp==0.2.2
 opencv-python==4.1.0.25
 Pillow==6.1.0
