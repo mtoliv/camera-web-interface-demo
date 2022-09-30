@@ -7,7 +7,7 @@ func-timeout==4.3.5
 gevent==1.4.0
 greenlet==0.4.15
 imageio==2.5.0
-joblib==0.13.2
+joblib==1.2.0
 jsonschema==3.0.2
 kiwisolver==1.1.0
 matplotlib==3.1.1
